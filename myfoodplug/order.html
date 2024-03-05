@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/638ccb607f.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Place an order</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bodyCover" id="bodyCover">
+
+        </div>
+        <!--Navbar section-->
+        <nav>
+            <div class="navicon">
+                <a href="index.html">
+                    <img style="height: 50px; width: 50px; border-radius: 50%;" src="/myfoodplug/assets/images/logo.JPG"
+                        alt="myfoodplug">
+                </a>
+                <span>myFoodPlug</span>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order now</a></li>
+                </ul>
+
+                <div>
+                    <button class="nav-menu" id="navbtn">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--Side menu-->
+        <div class="side-menu" id="side-menu">
+            <button id="closeMenu" class="nav-menu times">
+               <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+
+            <div class="menuList">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="order.html">Order now</a>
+                    </li>
+                </ul>
+            </div>
+       </div>
+
+
+        <!--Cover picture section-->
+
+        <div id="cover">
+            <div class="subcover">
+                <h2>Make an Order</h2>
+            </div>
+        </div>
+
+        <!--Form area-->
+        <div class="formarea">
+            <div>
+                <h2>Place your order <strong>now</strong></h2>
+                <p>you are only a step away from having a taste of our homemade delicacies</p>
+
+                <form id="form">
+                    <div class="formControl">
+                        <label for="Name">Name</label><br>
+                        <input class="formInput" id="name" type="text" placeholder="Name"><br>
+                        <small id="message" ></small>
+                    </div>
+
+                    <div class="formControl">
+                        <label for="Phone number">Phone number</label><br>
+                        <input class="formInput" id="phone-number" type="tel" placeholder="Phone number"><br>
+                        <small id="message2"></small>
+                    </div>
+
+                    <div class="formControl">
+                        <label for="Email">Email</label><br>
+                        <input class="formInput" id="email" type="email" placeholder="Email"><br>
+                        <small id="message3"></small>
+                    </div>
+
+                    <div class="formControl">
+                        <label for="Choose a meal">Choose a meal</label><br>
+                        <select id="meal" name="meal" placeholder="Choose a meal"><br>
+                            <option value="Egusi Soup">Egusi Soup</option>
+                            <option value="Okra Soup">Okra Soup</option>
+                            <option value="Vegetable Soup">Vegetable Soup</option>
+                            <option value="Banga Soup">Banga Soup</option>
+                            <option value="Ogbonor Soup">Ogbonor Soup</option>
+                            <option value="Jollof rice">Jollof rice</option>
+                        </select><br>
+                    </div>
+
+                    <div class="formControl">
+                        <label for="Quantity">Quantity</label><br>
+                        <input class="formInput" id="quantity" type="text" placeholder="Quantity e.g 1 litre"><br>
+                        <small id="message4" ></small>
+                    </div>
+
+                    <div class="formControl">
+                        <label for="Delivery address">Delivery address</label><br>
+                        <input class="formInput" id="address" type="text" placeholder="Delivery Address"><br>
+                        <small id="message5"></small>
+                    </div>
+
+                    <div class="formControl">
+                        <label for="Delivery date">Delivery date</label><br>
+                        <input class="formInput s" id="delivery-date" type="date" placeholder="Delivery Date"><br>
+                        <small id="message6"></small>
+                    </div>
+                    <button id="orderbtn">Order now</button>
+                </form>
+
+                <div id="success" class="mainsuccess">
+                    <div>
+                        <div id="closebtn" class="closebtn">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                        <div class="subsuccess">
+                            <h3>Order successful!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="formImage">
+                <img id="imagery" class="image" src="assets/images/Ewa agoyin.jpg">
+            </div>
+
+
+        </div>
+
+
+        <!--Footer section-->
+        <footer>
+            <div>
+                <h3>Contact Us</h3>
+                <div class="icons">
+                    <ul>
+                        <li><a href="https://www.instagram.com/myfoodplug.abuja/"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <h3>Our Services</h3>
+                <p>We cook the most delicious homemade meals in desirable quantities, <br> based on our client's budget
+                    and we deliver to any location within Abuja.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="foodplug.js"></script>
+
+</html>
