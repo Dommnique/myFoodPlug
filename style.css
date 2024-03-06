@@ -365,7 +365,7 @@ footer p{
 
 /*HOMEPAGE SECTION*/
 #backgroundImg{
-    background-image: url('/myfoodplug/assets/images/Homepage\ BG.jpg');
+    background-image: url('assets/images/Homepage\ BG.jpg');
     height: 100vh;
     width: 100%;
     background-position: center;
